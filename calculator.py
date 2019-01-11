@@ -18,3 +18,10 @@ class Calculator(object):
         ret = x * y
         self.x = ret
         return ret
+
+    def div(self, x, y):
+        if y == 0:
+            return "Error: Can not div by zero"
+        ret = x/y
+        self.x = ret
+        return ret
